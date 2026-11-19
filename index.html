@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ableton Tools — Caddy & MCP Link</title>
+<style>
+:root{color-scheme:dark;--bg:#171b1a;--panel:#222927;--border:#3b4742;--text:#eef2e9;--muted:#bdc9c0;--accent:#d4f68b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,sans-serif}
+main{max-width:880px;margin:auto;padding:56px 24px}
+h1{font-size:clamp(2rem,5vw,3.2rem);letter-spacing:-.05em;margin:0 0 6px}
+.lead{color:var(--muted);margin-bottom:34px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:24px;margin-top:20px}
+h2{margin:0 0 6px;font-size:1.3rem}
+.card p{margin:0 0 14px;color:var(--muted)}
+a.btn{display:inline-block;font:inherit;font-weight:600;text-decoration:none;color:#18220b;background:var(--accent);border-radius:8px;padding:10px 16px;margin-right:10px}
+a.ghost{background:transparent;color:var(--accent);border:1px solid var(--border)}
+a.ghost:hover{border-color:var(--accent)}
+footer{color:var(--muted);font-size:.85rem;margin-top:34px}
+code{background:var(--bg);border:1px solid var(--border);border-radius:5px;padding:1px 6px}
+</style>
+<main>
+<h1>Ableton Tools</h1>
+<p class="lead">Two small, read-only friends for Ableton Live 12 — built side by side.</p>
+
+<div class="card">
+<h2>Ableton Caddy</h2>
+<p>A local companion that reads your open set through the Live MCP bridge and suggests processing chains one channel at a time — each with a reason to try it and something specific to listen for. It never changes your set.</p>
+<a class="btn" href="caddy/?demo">Try the live demo (no install)</a>
+<a class="btn ghost" href="https://github.com/24pqp954c9-boop/Ableton-caddy">Source</a>
+<a class="btn ghost" href="https://github.com/24pqp954c9-boop/Ableton-caddy/releases/latest">macOS app + releases</a>
+<p style="margin-top:14px">With Live open: install <code>AbletonMCP</code> via the link below, then start the app — the demo above runs entirely in your browser and shows the real UI against a built-in example set.</p>
+</div>
+
+<div class="card">
+<h2>Ableton MCP Link</h2>
+<p>A desktop installer for the Ableton Live MCP bridge: it activates the <b>AbletonMCP</b> Control Surface in Live and configures your MCP clients (VS Code, Claude, Hermes…) to talk to it. Caddy runs on top of exactly this bridge, same pinned version.</p>
+<a class="btn ghost" href="https://github.com/24pqp954c9-boop/Ableton-mcp-link">Source &amp; install steps</a>
+</div>
+
+<footer>Both tools are licensed Apache-2.0 and read-only by design. The demo page mirrors the Caddy v0.1.2+ UI. Nothing here touches your audio, your sets, or your machine.</footer>
+</main>
+</html>
